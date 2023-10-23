@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edvin & Szalkai</title>
+	<link rel="icon" type="image/x-icon" href="ikon/camera_FILL0_wght400_GRAD0_opsz24.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <style>
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      @font-face {
+  font-family: "Neue Montreal";
+  src: url(./betutipusok/PPNeueMontreal-Medium.otf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+}
+/*
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Neue Montreal";
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 100px;
+  color: #000000;
+}*/
+
+.nav {
+  top: 0;
+  letter-spacing:0.7px;
+  font-family: "Neue Montreal";
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  padding: 0.9rem;
+  color: #000000;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+a {
+text-decoration-line: none;
+}
+
+a:link {
+color: rgb(0, 0, 0);
+}
+
+a:visited {
+color: rgb(0, 0, 0);
+}
+
+a:hover {
+color: rgb(0, 0, 0);
+/*border-bottom: 1px solid black;*/
+}
+
+a:active {
+color: rgb(0, 0, 0);
+}
+
+
+.site-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-item {
+  margin-left: 60px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid red; */
+  width: 400px;
+  height: 300px;
+}
+
+.block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.b-1 {
+  background: url("./kepek/1.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.b-2 {
+  background: url("./kepek/2.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.b-3 {
+  background: url("./kepek/3.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.b-4 {
+  background: url("./kepek/4.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.b-5 {
+  background: url("./kepek/5.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.b-6 {
+  background: url("./kepek/6.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.b-7 {
+  background: url("./kepekv/7.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  bottom: -10rem;
+  background: #ffffff;
+}
+
+.title {
+  margin-top: 20rem;
+  text-align: center;
+  font-family: "Neue Montreal";
+  font-size: 10em;
+  color: #000000;
+  overflow: hidden;
+}
+
+.title .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.video {
+  margin-top: 60rem;
+  text-align: center;
+}
+
+    </style>
+  </head>
+  <body>
+    <!--<div class="navbar">
+      <div class="site-info">elevated</div>
+      <div class="site-menu">
+        <div class="menu-item">projects</div>
+        <div class="menu-item">about</div>
+        <div class="menu-item">contact</div>
+      </div>
+    </div>-->
+ 
+      <div class="nav">
+      <div class="site-menu">
+      <div>
+      <b><a href="index.html">Edvin & Szalkai</a></b>
+      </div>
+      <div><a href="galeria.html">Galéria</a>,&nbsp;<a href="rolunk.html">Rólunk</a>,&nbsp;<a href="kapcsolat.html">kapcsolat</a></div>
+      <!--<div>Kosár</div>-->
+    </div>
+    </div>
+    
+
+    <div class="container">
+      <div class="block b-1"></div>
+      <div class="block b-2"></div>
+      <div class="block b-3"></div>
+      <div class="block b-4"></div>
+      <div class="block b-5"></div>
+      <div class="block b-6"></div>
+      <div class="block b-7"></div>
+    </div>
+    <div class="overlay"></div>
+    <p class="title">Lorem Ipsum dolor</p>
+    <div class="video">
+    <video width="800" height="800" autoplay="autoplay" muted>
+      <source src="videok/video.mp4" type="video/mp4" />
+    </video>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      // 
+      var textWrapper = document.querySelector(".title");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+
+      anime.timeline().add({
+        targets: ".title .letter",
+        translateY: [-200, 0],
+        easing: "easeOutExpo",
+        duration: 1400,
+        delay: (el, i) => 6500,
+      });
+
+      TweenMax.staggerFrom(
+        ".container > .block",
+        2,
+        {
+          y: "110%",
+          ease: Expo.easeInOut,
+          delay: 1,
+        },
+        0.4
+      );
+      TweenMax.to(".overlay", 0.5, {
+        y: "100%",
+        ease: Expo.easeInOut,
+        delay: 5.2,
+      });
+
+      TweenMax.to(".container", 2, {
+        scale: "2",
+        y: "90%",
+        ease: Expo.easeInOut,
+        delay: 5.5,
+      });
+
+      TweenMax.staggerFrom(
+        ".navbar > div",
+        1.6,
+        {
+          opacity: 0,
+          y: -100,
+          ease: Expo.easeInOut,
+          delay: 6,
+        },
+        0.08
+      );
+      TweenMax.staggerFrom(
+        ".site-menu > div",
+        1,
+        {
+          opacity: 0,
+          y: -100,
+          ease: Power2.easeOut,
+          delay: 6,
+        },
+      );
+    </script>
+  </body>
+</html>
