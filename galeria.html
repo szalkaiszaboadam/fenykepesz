@@ -122,6 +122,78 @@ nav {
 		/*height: 37px;*/
 	}
 
+.container {
+    position: fixed; 
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255); 
+  z-index: 2; 
+  cursor: pointer; 
+}
+
+
+
+.closebtn {
+letter-spacing:0.7px;
+    background-color: white;
+    /*font-weight: 400;*/
+    padding: 0.9rem;
+    height: 40px;
+    color: #000000;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+a:link {
+color: rgb(0, 0, 0);
+}
+
+a:visited {
+color: rgb(0, 0, 0);
+}
+
+a:hover {
+color: rgb(0, 0, 0);
+/*border-bottom: 1px solid black;*/
+}
+
+a:active {
+color: rgb(0, 0, 0);
+}
+
+
+
+#expandedImg{
+    position: absolute;
+    width: 900px;
+  height: 700px;
+  left: 200px;
+  top: 90px;
+}
+
+
+
+#imgtext {
+  position: absolute;
+  top: 88px;
+  right: 550px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+
 
 </style>
 </head>
@@ -139,125 +211,117 @@ nav {
 <div class="kutya">
 <ul>
 	<li>
-		<a href="index.html">
 			<figure>
-				<img src="eroforrasok/kepek/12.png" alt="">
+				<img src="eroforrasok/kepek/12.png" alt="LOREM IPSUM DOLOR SIT ~ 2023 OKTÓBERE<br>2000 Ft" onclick="myFunction(this);">
 				<figcaption>LOREM IPSUM DOLOR SIT ~ 2023 OKTÓBERE</figcaption>
 			</figure>
 		</a>
 	</li>
 	<li>
-		<a href="">
 			<figure>
-				<img src="eroforrasok/kepek/4.png" alt="">
+				<img src="eroforrasok/kepek/4.png" alt="COMMODO IN RUTRUM SED ~ 2023 MÁJUSA" onclick="myFunction(this);">
 			<figcaption>COMMODO IN RUTRUM SED ~ 2023 MÁJUSA</figcaption>
 			</figure>
 		</a>
 	</li>
 	<li>
-		<a href="">
 			<figure>
-				<img src="eroforrasok/kepek/9.png" alt="">
+				<img src="eroforrasok/kepek/9.png" alt="UT COMMODO LEO VELIT ~ 2021 JÚNIUSA" onclick="myFunction(this);">
 				<figcaption>UT COMMODO LEO VELIT ~ 2021 JÚNIUSA</figcaption>
 			</figure>
 		</a>
 	</li>
 	<li>
-		<a href="">
 			<figure>
-				<img src="eroforrasok/kepek/7.png" alt="">
+				<img src="eroforrasok/kepek/7.png" alt="UT PORTTITOR ~ 2022 DECEMBERE" onclick="myFunction(this);">
 				<figcaption>UT PORTTITOR ~ 2022 DECEMBERE</figcaption>
 			</figure>
 		</a>
 	</li>
 	<li>
-		<a href="">
 			<figure>
-				<img src="eroforrasok/kepek/5.png" alt="">
+				<img src="eroforrasok/kepek/5.png" alt="PROIN EGESTAS EST VEL ODIO ~ 2023 ÁRPILIS" onclick="myFunction(this);">
 				<figcaption>PROIN EGESTAS EST VEL ODIO ~ 2023 ÁRPILISA</figcaption>
 			</figure>
 		</a>
 	</li>
 	<li>
-		<a href="">
 			<figure>
-				<img src="eroforrasok/kepek/10.png" alt="">
+				<img src="eroforrasok/kepek/10.png" alt="EROS MAGNA, EU BLANDIT ~ 2023 JÚLIUSA" onclick="myFunction(this);">
 				<figcaption>EROS MAGNA, EU BLANDIT ~ 2023 JÚLIUSA</figcaption>
 			</figure>
 		</a>
 	</li>
 	<li>
-		<a href="">
 			<figure>
-				<img src="eroforrasok/kepek/11.png" alt="">
+				<img src="eroforrasok/kepek/11.png" alt="ENIM SED VEHICULA ~ 2023 JÚLIUSA" onclick="myFunction(this);">
 				<figcaption>ENIM SED VEHICULA ~ 2023 JÚLIUSA</figcaption>
 			</figure>
 		</a>
 	</li>
 	<li>
-		<a href="">
 			<figure>
-				<img src="eroforrasok/kepek/15.png" alt="">
+				<img src="eroforrasok/kepek/15.png" alt="LOBORTIS LEO RHONCUS PORTA ~ 2023 SZEPTEMBERE" onclick="myFunction(this);">
 				<figcaption>LOBORTIS LEO RHONCUS PORTA ~ 2023 SZEPTEMBERE</figcaption>
 			</figure>
 		</a>
 	</li>
 	<li>
-		<a href="">
 			<figure>
-				<img src="eroforrasok/kepek/1.png" alt="">
+				<img src="eroforrasok/kepek/1.png" alt="CONSECTETUR ADIPISCING ELIT ~ 2022 OKTÓBERE" onclick="myFunction(this);">
 				<figcaption>CONSECTETUR ADIPISCING ELIT ~ 2022 OKTÓBERE</figcaption>
 			</figure>
 		</a>
 	</li>
 	<li>
-		<a href="">
 			<figure>
-				<img src="eroforrasok/kepek/2.png" alt="">
+				<img src="eroforrasok/kepek/2.png" alt="INTEGER NEC ~ 2021 JANUÁRJA" onclick="myFunction(this);">
 				<figcaption>INTEGER NEC ~ 2021 JANUÁRJA</figcaption>
 			</figure>
 		</a>
 	</li>
 	<li>
-		<a href="">
 			<figure>
-				<img src="eroforrasok/kepek/3.png" alt="">
+				<img src="eroforrasok/kepek/3.png" alt="ALIQUAM ERAT VOLUTPAT ~ 2023 JANUÁRJA" onclick="myFunction(this);">
 				<figcaption>ALIQUAM ERAT VOLUTPAT ~ 2023 JANUÁRJA</figcaption>
 			</figure>
 		</a>
 	</li>
 	<li>
-		<a href="">
 			<figure>
-				<img src="eroforrasok/kepek/8.png" alt="">
+				<img src="eroforrasok/kepek/8.png" alt="LOREM IPSUM DOLOR SIT ~ 2023 AUGUSZTUSA" onclick="myFunction(this);">
 				<figcaption>LOREM IPSUM DOLOR SIT ~ 2023 AUGUSZTUSA</figcaption>
 			</figure>
 		</a>
 	</li>
 	<li>
-		<a href="">
 			<figure>
-				<img src="eroforrasok/kepek/6.png" alt="">
+				<img src="eroforrasok/kepek/6.png" alt="AMET ELEIFEND LIBERO FINIBUS ~ 2020 FEBRUÁRJA" onclick="myFunction(this);">
 				<figcaption>AMET ELEIFEND LIBERO FINIBUS ~ 2020 FEBRUÁRJA</figcaption>
 			</figure>
 		</a>
 	</li>
 	<li>
-		<a href="">
 			<figure>
-				<img src="eroforrasok/kepek/7.png" alt="">
+				<img src="eroforrasok/kepek/7.png" alt="VEHICULA ~ 2022 MÁRCIUSA" onclick="myFunction(this);">
 				<figcaption>VEHICULA ~ 2022 MÁRCIUSA</figcaption>
 			</figure>
 		</a>
-	</li>
+	</li>	
 	<li>
-		<a href="">
-			<figure>
-				<img src="eroforrasok/kepek/13.png" alt="">
-				<figcaption>TELLUS SED SAPIEN ~ 2022 FEBRUÁRJA</figcaption>
-			</figure>
-		</a>
-	</li>
+		<figure>
+			<img src="eroforrasok/kepek/13.png" alt="TELLUS SED SAPIEN ~ 2022 FEBRUÁRJA" onclick="myFunction(this);">
+			<figcaption>TELLUS SED SAPIEN ~ 2022 FEBRUÁRJA</figcaption>
+		</figure>
+	</a>
+</li>
+<li>
+	<figure>
+		<img src="eroforrasok/kepek/13.png" alt="TELLUS SED SAPIEN ~ 2022 FEBRUÁRJA" onclick="myFunction(this);">
+		<figcaption>TELLUS SED SAPIEN ~ 2022 FEBRUÁRJA</figcaption>
+	</figure>
+</a>
+</li>
 </ul>
 </div>
 
@@ -269,5 +333,41 @@ nav {
 	</div>
   </div>
 
+
+<div class="container">
+
+
+
+	<span onclick="this.parentElement.style.display='none'" class="closebtn">
+        <div>
+            <b><a href="index.html">Edvin & Szalkai</a></b>
+        </div>
+        <div>✖ BEZÁRÁS</div>
+    </span>
+  
+
+    <img id="expandedImg">
+
+    <div id="imgtext"></div>
+
+	<div class="footer">
+		<div><a href="">INSTAGRAM</a>,&nbsp;<a href="">FACEBOOK</a>,&nbsp;<a href="">YOUTUBE</a></div>
+		<div>
+		  <!--<a href="index.html">Edvin & Szalkai</a>-->
+		  Készítette Pál Edvin és Szalkai-Szabó Ádám
+		</div>
+	  </div>
+
+  </div>
+
+  <script>
+	function myFunction(imgs) {
+	var expandImg = document.getElementById("expandedImg");
+	var imgText = document.getElementById("imgtext");
+	expandImg.src = imgs.src;
+	imgText.innerHTML = imgs.alt;
+	expandImg.parentElement.style.display = "block";
+}
+</script>
 </body>
 </html>
