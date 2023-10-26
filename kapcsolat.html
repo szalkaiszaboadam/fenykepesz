@@ -317,8 +317,9 @@ textarea {
             <label for="message"></label>
             <textarea name="message" placeholder="Lorem Ipsum dolor sit amet" id="message_input" cols="30" rows="5" required></textarea>
           </div>
-          <div class="submit">
+          <div class="submit" onclick="myFunction()">
             <input type="submit" value="ELKÜLDÉS" id="form_button" />
+            
           </div>
         </form><!-- // End form -->
 
@@ -334,6 +335,10 @@ textarea {
         </div>
       </div>
 
-      
+      <script>
+        function myFunction() {
+      alert("A levél elküldve!");
+      }
+      </script>
 </body>
 </html>
