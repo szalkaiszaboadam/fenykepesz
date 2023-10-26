@@ -194,6 +194,9 @@ color: rgb(0, 0, 0);
   font-size: 16px;
 }
 
+#image {
+            display: none;
+        }
 
 </style>
 </head>
@@ -348,7 +351,7 @@ color: rgb(0, 0, 0);
 
     <img id="expandedImg">
 
-    <div id="imgtext" onclick="myFunction2(this);"></div>
+    <a id="imgtext" onclick="letolt()" href="eroforrasok/kepek/0.png" download></a> <!--onclick="show()"-->
 
 	<div class="footer">
 		<div><a href="">INSTAGRAM</a>,&nbsp;<a href="">FACEBOOK</a>,&nbsp;<a href="">YOUTUBE</a></div>
@@ -358,37 +361,20 @@ color: rgb(0, 0, 0);
 		</div>
 	  </div>
 
+
+	  
+	  <img style="width: 300px;" id="image">
+	  
   </div>
 
 
 
-  <div class="container2">
-
-
-
-	<span onclick="this.parentElement.style.display='none'" class="closebtn">
-        <div>
-            <b><a href="index.html">Edvin & Szalkai</a></b>
-        </div>
-        <div>✖ BEZÁRÁS</div>
-    </span>
-  
-
-
-    <div id="imgtext" ></div>
-
-	<div class="footer">
-		<div><a href="">INSTAGRAM</a>,&nbsp;<a href="">FACEBOOK</a>,&nbsp;<a href="">YOUTUBE</a></div>
-		<div>
-		  <!--<a href="index.html">Edvin & Szalkai</a>-->
-		  Készítette Pál Edvin és Szalkai-Szabó Ádám
-		</div>
-	  </div>
-
-  </div>
+<!--document.getElementById("myAnchor").href = "http://www.cnn.com/"-->
 
 
   <script>
+
+
 	function myFunction(imgs) {
 	var expandImg = document.getElementById("expandedImg");
 	var imgText = document.getElementById("imgtext");
@@ -397,14 +383,22 @@ color: rgb(0, 0, 0);
 	expandImg.parentElement.style.display = "block";
 }
 
-
-function myFunction2(buy) {
-/*	var expandImg = document.getElementById("expandedImg");*/
-	var imgText = document.getElementById("imgtext");
-/*	expandImg.src = imgs.src;*/
-	imgText.innerHTML = imgs.alt;
-/*	expandImg.parentElement.style.display = "block";*/
+function letolt() {
+	var expandImg = document.getElementById("expandedImg");
+	document.getElementById("imgtext").href = expandImg.src;
 }
+/*
+function show() {
+			var expandImg = document.getElementById("expandedImg");
+			var imageS = document.getElementById("image");
+			imageS.src = expandImg.src;
+            document.getElementById('image')
+                .style.display = "block";
+            document.getElementById('imgtextss')
+                .style.display = "none";
+}*/
+
+
 </script>
 </body>
 </html>
