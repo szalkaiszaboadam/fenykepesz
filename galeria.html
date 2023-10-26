@@ -348,7 +348,7 @@ color: rgb(0, 0, 0);
 
     <img id="expandedImg">
 
-    <div id="imgtext"></div>
+    <div id="imgtext" onclick="myFunction2(this);"></div>
 
 	<div class="footer">
 		<div><a href="">INSTAGRAM</a>,&nbsp;<a href="">FACEBOOK</a>,&nbsp;<a href="">YOUTUBE</a></div>
@@ -360,6 +360,34 @@ color: rgb(0, 0, 0);
 
   </div>
 
+
+
+  <div class="container2">
+
+
+
+	<span onclick="this.parentElement.style.display='none'" class="closebtn">
+        <div>
+            <b><a href="index.html">Edvin & Szalkai</a></b>
+        </div>
+        <div>✖ BEZÁRÁS</div>
+    </span>
+  
+
+
+    <div id="imgtext" ></div>
+
+	<div class="footer">
+		<div><a href="">INSTAGRAM</a>,&nbsp;<a href="">FACEBOOK</a>,&nbsp;<a href="">YOUTUBE</a></div>
+		<div>
+		  <!--<a href="index.html">Edvin & Szalkai</a>-->
+		  Készítette Pál Edvin és Szalkai-Szabó Ádám
+		</div>
+	  </div>
+
+  </div>
+
+
   <script>
 	function myFunction(imgs) {
 	var expandImg = document.getElementById("expandedImg");
@@ -367,6 +395,15 @@ color: rgb(0, 0, 0);
 	expandImg.src = imgs.src;
 	imgText.innerHTML = imgs.alt;
 	expandImg.parentElement.style.display = "block";
+}
+
+
+function myFunction2(buy) {
+/*	var expandImg = document.getElementById("expandedImg");*/
+	var imgText = document.getElementById("imgtext");
+/*	expandImg.src = imgs.src;*/
+	imgText.innerHTML = imgs.alt;
+/*	expandImg.parentElement.style.display = "block";*/
 }
 </script>
 </body>
