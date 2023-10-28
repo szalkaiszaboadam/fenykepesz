@@ -209,6 +209,44 @@ color: rgb(0, 0, 0);
 		letter-spacing:0.6px;
 	  }
 
+    button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #000;
+  font: inherit;
+  margin: 0;
+}
+
+    #form_button {
+  background: none;
+  border: solid 1px #000000;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 10px 25px;
+ /* text-transform: uppercase;*/
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
     </style>
   </head>
   <body>
@@ -261,6 +299,10 @@ color: rgb(0, 0, 0);
   pretiumak felis malesu / odio a quam<br>
 
 </p>
+<div class="submit">
+  <input type="submit" value="ELKÜLDÉS" id="form_button" />
+  
+</div>
 </div>
 
     <div class="video">
