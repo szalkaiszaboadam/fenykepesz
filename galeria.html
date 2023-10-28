@@ -136,7 +136,19 @@ nav {
   cursor: pointer; 
 }
 
-
+#vasarlas {
+    position: fixed; 
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255); 
+  z-index: 2; 
+  cursor: pointer; 
+}
 
 .closebtn {
 letter-spacing:0.7px;
@@ -215,7 +227,7 @@ color: rgb(0, 0, 0);
 <ul>
 	<li>
 			<figure>
-				<img src="eroforrasok/kepek/12.png" alt="LOREM IPSUM DOLOR SIT ~ 2023 OKTÓBERE<br>24cm x 30cm<br>15 000 Ft<br><br>Megvásárlás  ↗" onclick="myFunction(this);">
+				<img src="eroforrasok/kepek/12.png" alt="LOREM IPSUM DOLOR SIT ~ 2023 OKTÓBERE<br>24cm x 30cm<br>15 000 Ft<br><br>Megvásárlás 🡭" onclick="myFunction(this);"> <!--🡥-->
 				<figcaption>LOREM IPSUM DOLOR SIT ~ 2023 OKTÓBERE</figcaption>
 			</figure>
 		</a>
@@ -351,7 +363,8 @@ color: rgb(0, 0, 0);
 
     <img id="expandedImg">
 
-    <a id="imgtext" onclick="letolt()" href="eroforrasok/kepek/0.png" download></a> <!--onclick="show()"-->
+	<div id="imgtext" onclick="myFunkcio()"></div>
+    <!--<a id="imgtext" onclick="myFunkcio()" href="eroforrasok/kepek/0.png" download></a>--> <!--onclick="show()"-->
 
 	<div id="btn"></div>
 
@@ -369,6 +382,44 @@ color: rgb(0, 0, 0);
 	  
   </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="vasarlas">
+
+<span onclick="this.parentElement.style.display='none'" class="closebtn">
+    <div>
+        <b><a href="index.html">Edvinke & Szalkai</a></b>
+    </div>
+    <div>🡨 VISSZA</div> <!--🡠-->
+</span>
+  
+<img id="expandedImg">
+
+<div id="btn"></div>
+
+<div class="footer">
+	<div><a href="">INSTAfsffGRAM</a>,&nbsp;<a href="">FACEBsdfOOK</a>,&nbsp;<a href="">YOUTUBE</a></div>
+	<div>
+		<!--<a href="index.html">Edvin & Szalkai</a>-->
+		ⓒ 2023 Készítette Pál Edvin & Szalkai-Szabó Ádám
+	</div>
+</div>
+
+<img style="width: 300px;" id="image">
+	  
+</div>
 
 
 <!--document.getElementById("myAnchor").href = "http://www.cnn.com/"-->
@@ -390,6 +441,16 @@ function letolt() {
 	var expandImg = document.getElementById("expandedImg");
 	document.getElementById("imgtext").href = expandImg.src;
 }
+
+function myFunkcio() {
+  var x = document.getElementById("vasarlas");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 /*
 function show() {
 			var expandImg = document.getElementById("expandedImg");
