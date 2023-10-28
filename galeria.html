@@ -221,6 +221,221 @@ color: rgb(0, 0, 0);
 
 
 
+
+
+
+/*
+		html {
+    font-family: "Neue Montreal";
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+*/
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #000;
+  font: inherit;
+  margin: 0;
+}
+
+
+#vasarlasForm {
+  position: relative;
+  /*padding: 0.4rem;
+  max-width: 940px;*/
+  font-size: 12px;
+  max-width: 600px;
+  margin: auto;
+}
+
+
+::-webkit-scrollbar {
+        display: none;
+      }
+
+
+
+/*
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #474544;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}*/
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 1px #000000;
+	color: #000000;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.795em 0;
+  /*text-transform: uppercase;*/
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-20.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 90px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #000000;
+}
+
+:-moz-placeholder { 
+	color: #000000;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #000000;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #000000;
+}
+
+#form_button {
+  background: none;
+  border: solid 1px #000000;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 10px 25px;
+ /* text-transform: uppercase;*/
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
 </head>
 <body>
@@ -413,7 +628,43 @@ color: rgb(0, 0, 0);
 
     <img id="Img" style="width: 120px; height: 100px;" src="eroforrasok/kepek/19.png">
 
-<div>Na mi van köcsögök</div>
+	<div id="vasarlasForm">   
+		<div id="form">
+	   <form action="#" method="post" id="contact_form">
+		   <div class="name">
+			 <label for="name"></label>
+			 <input type="text" placeholder="TELJES NÉV" name="name" id="name_input" required>
+		   </div>
+		   <div class="email">
+			 <label for="email"></label>
+			 <input type="email" placeholder="E-MAIL CÍM" name="email" id="email_input" required>
+		   </div>
+		   <div class="telephone">
+			 <label for="name"></label>
+			 <input type="text" placeholder="TELEFONSZÁM" name="telephone" id="telephone_input" required>
+		   </div>
+		   <div class="subject">
+			 <label for="subject"></label>
+			 <select placeholder="KATEGÓRIA" name="subject" id="subject_input" required>
+			   <option disabled hidden selected>KATEGÓRIA</option>
+			   <option>Lorem Ipsum dolor sit amet</option>
+			   <option>Lorem Ipsum dolor sit amet</option>
+			   <option>Lorem Ipsum dolor sit amet</option>
+			 </select>
+		   </div>
+		   <div class="message">
+			 <label for="message"></label>
+			 <textarea name="message" placeholder="Lorem Ipsum dolor sit amet" id="message_input" cols="30" rows="5" required></textarea>
+		   </div>
+		   <div class="submit" onclick="myFunction()">
+			 <input type="submit" value="ELKÜLDÉS" id="form_button" />
+			 
+		   </div>
+		 </form>
+	   </div>
+ 
+	   <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a pulvinar urna. Praesent blandit elementum quam ut ullamcorper. Praesent cursus ligula vitae tincidunt pharetra. Praesent sollicitudin, leo id varius euismod, lectus elit dictum felis, vitae mattis neque nunc id augue. </p> -->
+	   </div>
 
 <div class="footer">
 	<div><a href="">INSTAGRAM</a>,&nbsp;<a href="">FACEBOOK</a>,&nbsp;<a href="">YOUTUBE</a></div>
