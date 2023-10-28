@@ -379,6 +379,7 @@ textarea {
 }
 
 #form_button {
+margin-top: 8px;
   background: none;
   border: solid 1px #000000;
   color: #000000;
@@ -403,6 +404,55 @@ textarea {
 }
 
 
+
+#form_button2 {
+  background: none;
+  border: solid 1px #000000;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 10px 25px;
+ /* text-transform: uppercase;*/
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button2:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+
+#form_button3 {
+  background: none;
+  border: solid 1px #000000;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 10px 25px;
+ /* text-transform: uppercase;*/
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button3:hover {
+  background: #000000;
+  color: #ffffff;
+}
 
 
 
@@ -688,7 +738,7 @@ textarea {
 		  </div>
 
 		   <div class="submit" onclick="vasarlas()">
-			 <div id="form_button">TOVÁBB</div> 
+			 <div id="form_button3">TOVÁBB</div> 
 		   </div>
 
 		  <!--<div class="telephone">
@@ -747,7 +797,7 @@ textarea {
 
 
 	
-		<img id="Img2" style="width: 120px; height: 100px;" src="eroforrasok/kepek/19.png">
+		<img id="Img2" style="width: 120px; height: 100px; display: none;" src="eroforrasok/kepek/19.png">
 	
 		<div id="vasarlasForm">   
 			<div id="form">
@@ -777,7 +827,7 @@ textarea {
 			 </div>
 
 			 <div class="submit">
-				<a id="form_button" onclick="letolt()" href="f" download>BEFEJEZÉS</a>
+				<a id="form_button2" onclick="letolt()" href="f" download>BEFEJEZÉS</a>
 			  </div>
 				   <div class="submit" onclick="vasarlas2.style.display='none'">
 				 <div id="form_button">VISSZA</div> 
@@ -852,7 +902,7 @@ function vasarlas() {
 function letolt() {
 
 	var Img2 = document.getElementById("Img2");
-	document.getElementById("form_button").href = Img2.src;
+	document.getElementById("form_button2").href = Img2.src;
 }
 /*
 function show() {
