@@ -35,7 +35,16 @@ body {
 	align-items: center;
 }
 
-img {
+.kutya img {
+	margin-top: 25px;
+	width: 100%;
+	display: block;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	transition: transform 1000ms;
+}
+
+.container img {
 	margin-top: 25px;
 	width: 100%;
 	display: block;
@@ -210,6 +219,8 @@ color: rgb(0, 0, 0);
             display: none;
         }
 
+
+
 </style>
 </head>
 <body>
@@ -378,8 +389,10 @@ color: rgb(0, 0, 0);
 
 
 	  
-	  <img style="width: 300px;" id="image">
-	  
+	  <!--<img style="width: 300px;" id="image">-->
+
+
+
   </div>
 
 
@@ -389,25 +402,18 @@ color: rgb(0, 0, 0);
 
 
 
-
-
-
-
-
-
-
-<div id="vasarlas">
+	  <div id="vasarlas">
 
 <span onclick="this.parentElement.style.display='none'" class="closebtn">
     <div>
-        <b><a href="index.html">Edvinke & Szalkai</a></b>
+        <b><a href="index.html">Edvin & Szalkai</a></b>
     </div>
     <div>🡨 VISSZA</div> <!--🡠-->
 </span>
-  
-<img id="expandedImg">
 
-<div id="btn"></div>
+    <img id="Img" style="width: 120px; height: 100px;" src="eroforrasok/kepek/19.png">
+
+<div>Na mi van köcsögök</div>
 
 <div class="footer">
 	<div><a href="">INSTAGRAM</a>,&nbsp;<a href="">FACEBOOK</a>,&nbsp;<a href="">YOUTUBE</a></div>
@@ -417,9 +423,16 @@ color: rgb(0, 0, 0);
 	</div>
 </div>
 
-<img style="width: 300px;" id="image">
 	  
 </div>
+
+
+
+
+
+
+
+
 
 
 <!--document.getElementById("myAnchor").href = "http://www.cnn.com/"-->
@@ -444,6 +457,11 @@ function letolt() {
 
 function myFunkcio() {
   var x = document.getElementById("vasarlas");
+
+  var expandImg = document.getElementById("expandedImg");
+
+  document.getElementById("Img").src = expandImg.src;
+
   /*if (x.style.display === "none") {
     x.style.display = "block";
   } else {
