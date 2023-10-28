@@ -140,9 +140,8 @@ form {
 
 #container {
   position: relative;
-
   padding: 0.4rem;
-
+  max-width: 940px;
 }
 
 
@@ -277,6 +276,7 @@ textarea {
   color: #ffffff;
 }
 
+
     </style>
 </head>
 <body>
@@ -291,7 +291,8 @@ textarea {
   <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2735.862749834371!2d19.834535491525255!3d46.70844237511481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743ebbc735ee1d5%3A0xd9ad7774323565eb!2sSaint%20Benedict%20PG%20Bilingual%20Vocational%20Secondary%20School%20and%20Student%20Hostel%20of%20Kiskunfelegyhaza!5e0!3m2!1sen!2shu!4v1698246066725!5m2!1sen!2shu" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
     <div id="container">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2735.862749834371!2d19.834535491525255!3d46.70844237511481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743ebbc735ee1d5%3A0xd9ad7774323565eb!2sSaint%20Benedict%20PG%20Bilingual%20Vocational%20Secondary%20School%20and%20Student%20Hostel%20of%20Kiskunfelegyhaza!5e0!3m2!1sen!2shu!4v1698246066725!5m2!1sen!2shu" width="1892" height="500" style="border:0; padding-bottom: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <form action="#" method="post" id="contact_form">
+       <div id="form">
+      <form action="#" method="post" id="contact_form">
           <div class="name">
             <label for="name"></label>
             <input type="text" placeholder="TELJES NÉV" name="name" id="name_input" required>
@@ -321,10 +322,11 @@ textarea {
             <input type="submit" value="ELKÜLDÉS" id="form_button" />
             
           </div>
-        </form><!-- // End form -->
+        </form>
+      </div>
 
       <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a pulvinar urna. Praesent blandit elementum quam ut ullamcorper. Praesent cursus ligula vitae tincidunt pharetra. Praesent sollicitudin, leo id varius euismod, lectus elit dictum felis, vitae mattis neque nunc id augue. </p> -->
-      </div><!-- // End #container -->
+      </div>
 
       
       <div class="footer">
