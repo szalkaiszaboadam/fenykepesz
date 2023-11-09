@@ -635,7 +635,7 @@ margin-top: 8px;
 	<div id="vasarlasForm">   
 		<div id="form">
 			
-			<img id="Img" style="width: 120px; height: 120px; padding-bottom: 20px;" src="eroforrasok/kepek/19.png">
+			<img id="Img2" style="width: 120px; height: 120px; padding-bottom: 20px;" src="eroforrasok/kepek/19.png">
 			<h3 style="position: absolute; left: 140px; top: -5px;">LOREM IPSUM DOLOR SIT ~ 2023 OKTÓBERE<br>24cm x 30cm<br>15 000 Ft</h3>
 
 			<h1 style="text-align: right; padding-bottom: 20px;">Szállítási & Számlázási cím</h1>
@@ -751,70 +751,61 @@ margin-top: 8px;
 	</div>	  
 	</div>
 	
-  <script>
+	<script>
 
-	function myFunction(imgs) {
-	var expandImg = document.getElementById("expandedImg");
-	var imgText = document.getElementById("imgtext");
-	var btn = document.getElementById("btn");
-	expandImg.src = imgs.src;
-	imgText.innerHTML = imgs.alt;
-	expandImg.parentElement.style.display = "block";
-}
-
-function myFunkcio() {
-  var x = document.getElementById("vasarlas");
-
-  var imgText = document.getElementById("imgtext");
-  var expandImg = document.getElementById("expandedImg");
-  var Img2text = document.getElementById("Img2text");
-
-
-  document.getElementById("Img").src = expandImg.src;
-  /*Img2text.innerHTML = imgText.alt;*/
-
-
-
-	x.style.display = "block";
-
-}
-
-
-function vasarlas() {
-	var x = document.getElementById("vasarlas2");
-
-
-	var imgText = document.getElementById("imgtext");
-	var Img = document.getElementById("Img");
-	var Img2text = document.getElementById("Img2text");
-
-	/*document.getElementById("Img2").src = Img.src;*/
+		function myFunction(imgs) {
+		var expandImg = document.getElementById("expandedImg");
+		var imgText = document.getElementById("imgtext");
+		var btn = document.getElementById("btn");
+		expandImg.src = imgs.src;
+		imgText.innerHTML = imgs.alt;
+		expandImg.parentElement.style.display = "block";
+	}
 	
- 	Img2text.innerHTML = imgText.alt;
+	function myFunkcio() {
+	  var x = document.getElementById("vasarlas");
+	
+	  var expandImg = document.getElementById("expandedImg");
+	
+	 var Img = document.getElementById("Img");
 
-	x.style.display = "block";
-}
-
-function letolt() {
-
-	var Img2 = document.getElementById("Img2");
-	document.getElementById("form_button2").href = Img2.src;
-}
-/*
-function show() {
-			var expandImg = document.getElementById("expandedImg");
-			var imageS = document.getElementById("image");
-			imageS.src = expandImg.src;
-            document.getElementById('image')
-                .style.display = "block";
-            document.getElementById('imgtextss')
-                .style.display = "none";
-}*/
-/*
-function myFunction() {
-      alert("A vásárlás megtörtént");
-      }*/
-
-</script>
-</body>
+	  document.getElementById("Img").src = expandImg.src;
+	
+		x.style.display = "block";
+	
+	}
+	
+	
+	function vasarlas() {
+		var x = document.getElementById("vasarlas2");
+	
+		var Img = document.getElementById("Img");
+	
+		document.getElementById("Img2").src = Img.src;
+	
+		x.style.display = "block";
+	}
+	
+	function letolt() {
+	
+		var Img2 = document.getElementById("Img2");
+		document.getElementById("form_button2").href = Img2.src;
+	}
+	/*
+	function show() {
+				var expandImg = document.getElementById("expandedImg");
+				var imageS = document.getElementById("image");
+				imageS.src = expandImg.src;
+				document.getElementById('image')
+					.style.display = "block";
+				document.getElementById('imgtextss')
+					.style.display = "none";
+	}*/
+	/*
+	function myFunction() {
+		  alert("A vásárlás megtörtént");
+		  }*/
+	
+	</script>
+	</body>
 </html>
